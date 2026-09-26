@@ -5,3 +5,7 @@
 
 [node name="TrashNode" unique_id=1572421385 instance=ExtResource("1_4o2be")]
 script = ExtResource("2_mot68")
+_text = "Pegar"
+
+[connection signal="body_entered" from="ItemArea" to="." method="PlayerEntered"]
+[connection signal="body_exited" from="ItemArea" to="." method="PlayerExited"]
