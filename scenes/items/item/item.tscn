@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://dmjwxmb5elsuq"]
+
+[ext_resource type="Texture2D" uid="uid://d3qvho8h7nc51" path="res://assets/placeholders/item_placeholder.png" id="1_ouqkq"]
+[ext_resource type="Theme" uid="uid://d20meefyj6v6a" path="res://resources/themes/label_theme.tres" id="2_k5fmm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nfe6u"]
+size = Vector2(8, 8)
+
+[node name="ItemNode" type="Node2D" unique_id=1572421385]
+
+[node name="ItemSprite" type="Sprite2D" parent="." unique_id=262207874]
+texture = ExtResource("1_ouqkq")
+
+[node name="ItemArea" type="Area2D" parent="." unique_id=1158293288]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ItemArea" unique_id=1196456430]
+shape = SubResource("RectangleShape2D_nfe6u")
+
+[node name="ActionLabel" type="Label" parent="." unique_id=1056145439]
+visible = false
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -8.5
+offset_top = -17.0
+offset_right = 8.5
+grow_horizontal = 2
+grow_vertical = 0
+theme = ExtResource("2_k5fmm")

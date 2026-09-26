@@ -1,0 +1,5 @@
+[gd_resource type="Theme" format=3 uid="uid://d20meefyj6v6a"]
+
+[resource]
+default_font_size = 6
+Label/constants/outline_size = 2

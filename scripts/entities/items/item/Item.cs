@@ -1,0 +1,42 @@
+using Godot;
+using System;
+
+public abstract partial class Item : Node2D
+{
+	[Signal]
+	public delegate void PickedUpEventHandler();
+	
+	[Export]
+	protected String _text;
+	
+	protected Sprite2D _sprite;
+	protected Area2D _area;
+	protected Label _textLabel;
+	
+	public override void _Ready()
+	{
+		_sprite = GetNode<Sprite2D>("ItemSprite");
+		_area = GetNode<Area2D>("ItemArea");
+		_textLabel = GetNode<Label>("ActionLabel");
+		
+		_textLabel.Text = _text;
+	}
+	
+	public abstract void Pick();
+	
+	public void PlayerEntered(Node2D body)
+	{
+		if (body is Player player)
+		{
+			_textLabel.Visible = true;
+		}
+	}
+	
+	public void PlayerExited(Node2D body)
+	{
+		if (body is Player player)
+		{
+			_textLabel.Visible = false;
+		}
+	}
+}

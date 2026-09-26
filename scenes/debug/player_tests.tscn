@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://ckwdmffauso6x" path="res://scenes/entities/player/player.tscn" id="1_isbbw"]
 [ext_resource type="Texture2D" uid="uid://dbrehrboirskm" path="res://assets/placeholders/icon.svg" id="2_vdbxw"]
+[ext_resource type="PackedScene" uid="uid://bst3ev280e4eg" path="res://scenes/items/trash/trash.tscn" id="3_7sjer"]
 
 [node name="PlayerTests" type="Node2D" unique_id=1425756403]
 
@@ -11,3 +12,6 @@ position = Vector2(320, 178)
 [node name="Icon" type="Sprite2D" parent="." unique_id=1435949176]
 position = Vector2(408, 95)
 texture = ExtResource("2_vdbxw")
+
+[node name="TrashNode" parent="." unique_id=1572421385 instance=ExtResource("3_7sjer")]
+position = Vector2(399, 191)

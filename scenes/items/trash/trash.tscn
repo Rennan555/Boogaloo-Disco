@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://bst3ev280e4eg"]
+
+[ext_resource type="PackedScene" uid="uid://dmjwxmb5elsuq" path="res://scenes/items/item/item.tscn" id="1_4o2be"]
+[ext_resource type="Script" uid="uid://vg10qm7x7ta1" path="res://scripts/entities/items/trash/Trash.cs" id="2_mot68"]
+
+[node name="TrashNode" unique_id=1572421385 instance=ExtResource("1_4o2be")]
+script = ExtResource("2_mot68")
