@@ -1,3 +1,7 @@
 [gd_scene format=3 uid="uid://dolaa2vg3158b"]
 
-[node name="Character" type="CharacterBody2D" unique_id=347533653]
+[node name="CharacterNode" type="CharacterBody2D" unique_id=347533653]
+
+[node name="TestSprite" type="Sprite2D" parent="." unique_id=1526932312]
+
+[node name="CollisionShape" type="CollisionShape2D" parent="." unique_id=1720694813]
