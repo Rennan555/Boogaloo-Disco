@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b56tgc06uxgmv"
-path="res://.godot/imported/player_idle_back.png-204c8ae1f2b2639a48ec64f48418706c.ctex"
+uid="uid://lrmyv6yldodp"
+path="res://.godot/imported/disco_walls.png-8a0f6fdb01f771344e2084181ddcdb33.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/player/player_idle_back.png"
-dest_files=["res://.godot/imported/player_idle_back.png-204c8ae1f2b2639a48ec64f48418706c.ctex"]
+source_file="res://assets/sprites/disco/disco_walls.png"
+dest_files=["res://.godot/imported/disco_walls.png-8a0f6fdb01f771344e2084181ddcdb33.ctex"]
 
 [params]
 

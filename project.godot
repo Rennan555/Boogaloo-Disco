@@ -13,12 +13,13 @@ config_version=5
 config/name="Eletric Boogaloo"
 run/main_scene="uid://b4fcifc2cue8r"
 config/features=PackedStringArray("4.7", "C#", "Forward Plus")
-config/icon="res://assets/placeholders/icon.svg"
+config/icon="res://assets/sprites/placeholders/icon.svg"
 
 [autoload]
 
 KeyboardInput="*uid://c8n636sd3wfoi"
 DiscoManagement="*uid://d3b82jtub3sdx"
+AudioManagement="*uid://b7akri27mlil0"
 
 [display]
 

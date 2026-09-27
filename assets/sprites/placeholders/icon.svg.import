@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dwrwmxn4u4pxi"
-path="res://.godot/imported/player_walk_side.png-5f69904d8c12d4f0c994460a68704ac4.ctex"
+uid="uid://dbrehrboirskm"
+path="res://.godot/imported/icon.svg-e868ce1a8a1698d86d35c032314c11ed.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/player/player_walk_side.png"
-dest_files=["res://.godot/imported/player_walk_side.png-5f69904d8c12d4f0c994460a68704ac4.ctex"]
+source_file="res://assets/sprites/placeholders/icon.svg"
+dest_files=["res://.godot/imported/icon.svg-e868ce1a8a1698d86d35c032314c11ed.ctex"]
 
 [params]
 
@@ -38,3 +38,6 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
+svg/scale=1.0
+editor/scale_with_editor_scale=false
+editor/convert_colors_with_editor_theme=false

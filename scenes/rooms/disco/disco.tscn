@@ -1,8 +1,8 @@
 [gd_scene format=4 uid="uid://b4fcifc2cue8r"]
 
-[ext_resource type="Texture2D" uid="uid://lrmyv6yldodp" path="res://assets/disco/disco_walls.png" id="1_dynh0"]
+[ext_resource type="Texture2D" uid="uid://lrmyv6yldodp" path="res://assets/sprites/disco/disco_walls.png" id="1_dynh0"]
 [ext_resource type="Script" uid="uid://b1kutyfy7co45" path="res://scripts/rooms/disco/Disco.cs" id="1_hgink"]
-[ext_resource type="Texture2D" uid="uid://ifrxxprcyyoj" path="res://assets/disco/disco_ground.png" id="2_wy447"]
+[ext_resource type="Texture2D" uid="uid://ifrxxprcyyoj" path="res://assets/sprites/disco/disco_ground.png" id="2_wy447"]
 [ext_resource type="PackedScene" uid="uid://ckwdmffauso6x" path="res://scenes/entities/player/player.tscn" id="3_rkgys"]
 [ext_resource type="PackedScene" uid="uid://bst3ev280e4eg" path="res://scenes/items/trash/trash.tscn" id="4_rkgys"]
 [ext_resource type="PackedScene" uid="uid://ct55gvl1s42im" path="res://scenes/uis/disco_displays/disco_displays.tscn" id="4_wy447"]

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://lrmyv6yldodp"
-path="res://.godot/imported/disco_walls.png-b6cca7c2c77d2495203a2c0a5913cfbf.ctex"
+uid="uid://cmwi62j4pmnah"
+path="res://.godot/imported/player_walk.png-743c51584bf458c34732fea2cd08017b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/disco/disco_walls.png"
-dest_files=["res://.godot/imported/disco_walls.png-b6cca7c2c77d2495203a2c0a5913cfbf.ctex"]
+source_file="res://assets/sprites/player/player_walk.png"
+dest_files=["res://.godot/imported/player_walk.png-743c51584bf458c34732fea2cd08017b.ctex"]
 
 [params]
 
