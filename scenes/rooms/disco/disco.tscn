@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://ifrxxprcyyoj" path="res://assets/disco/disco_ground.png" id="2_wy447"]
 [ext_resource type="PackedScene" uid="uid://ckwdmffauso6x" path="res://scenes/entities/player/player.tscn" id="3_rkgys"]
 [ext_resource type="PackedScene" uid="uid://bst3ev280e4eg" path="res://scenes/items/trash/trash.tscn" id="4_rkgys"]
-[ext_resource type="PackedScene" uid="uid://ct55gvl1s42im" path="res://scenes/uis/disco_displays.tscn" id="4_wy447"]
+[ext_resource type="PackedScene" uid="uid://ct55gvl1s42im" path="res://scenes/uis/disco_displays/disco_displays.tscn" id="4_wy447"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5lsf2"]
 texture = ExtResource("1_dynh0")

@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://djhq4k1wkf0vq"]
+
+[ext_resource type="Texture2D" uid="uid://bwycmorioikjg" path="res://assets/ui/menu_bg.png" id="1_1ace6"]
+[ext_resource type="Theme" uid="uid://d20meefyj6v6a" path="res://resources/themes/label_theme.tres" id="2_kivbv"]
+
+[node name="Menu" type="Control" unique_id=1400064973]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MenuNinePatchRect" type="NinePatchRect" parent="." unique_id=2106180453]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -202.0
+offset_top = -111.0
+offset_right = 202.0
+offset_bottom = 111.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_1ace6")
+region_rect = Rect2(0, 0, 48, 48)
+patch_margin_left = 16
+patch_margin_top = 16
+patch_margin_right = 16
+patch_margin_bottom = 16
+
+[node name="MenuVBoxContainer" type="VBoxContainer" parent="MenuNinePatchRect" unique_id=121836566]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 4.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TitleLabel" type="Label" parent="MenuNinePatchRect/MenuVBoxContainer" unique_id=2131247330]
+layout_mode = 2
+theme = ExtResource("2_kivbv")
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 18
+text = "Menu"
+horizontal_alignment = 1
+vertical_alignment = 1
