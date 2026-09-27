@@ -29,6 +29,7 @@ public abstract partial class Item : Node2D
 		if (body is Player player)
 		{
 			_textLabel.Visible = true;
+			player.ActionPressed += Pick;
 		}
 	}
 	
@@ -37,6 +38,7 @@ public abstract partial class Item : Node2D
 		if (body is Player player)
 		{
 			_textLabel.Visible = false;
+			player.ActionPressed -= Pick;
 		}
 	}
 }

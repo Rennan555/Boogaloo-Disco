@@ -3,14 +3,14 @@ using System;
 
 public partial class Player : Character
 {
-	private Vector2 _direction = Vector2.Zero;
+	[Signal]
+	public delegate void ActionPressedEventHandler();
 	
-	public override void _Ready()
-	{
-	}
+	private Vector2 _direction = Vector2.Zero;
 	
 	public override void _Process(double delta)
 	{
+		ActionPress();
 	}
 	
 	public override void _PhysicsProcess(double delta)
@@ -19,5 +19,13 @@ public partial class Player : Character
 		Velocity = _direction * Speed;
 		
 		MoveAndSlide();
+	}
+	
+	private void ActionPress()
+	{
+		if (Input.IsActionPressed("Action"))
+		{
+			EmitSignal(SignalName.ActionPressed);
+		}
 	}
 }

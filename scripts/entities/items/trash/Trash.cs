@@ -10,5 +10,7 @@ public partial class Trash : Item
 	public override void Pick()
 	{
 		EmitSignal(SignalName.PickedUp);
+		
+		QueueFree();
 	}
 }
