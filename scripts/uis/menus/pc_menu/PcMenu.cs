@@ -5,6 +5,7 @@ public partial class PcMenu : Menu
 {
 	public void StartParty()
 	{
-		GD.Print("Começou festa");
+		_manager.StartParty();
+		QueueFree();
 	}
 }
