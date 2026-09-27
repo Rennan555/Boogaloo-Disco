@@ -3,8 +3,17 @@ using System;
 
 public partial class Trash : Item
 {
-	public override void _Process(double delta)
+	[Export]
+	public float FilthValue;
+	
+	private DiscoManagement _manager;
+	
+	public override void Enter()
 	{
+		_manager = GetNode<DiscoManagement>("/root/DiscoManagement");
+		
+		_manager.Filth += FilthValue;
+		_manager.TrashCount ++;
 	}
 	
 	public override void Pick()

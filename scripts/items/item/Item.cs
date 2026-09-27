@@ -19,10 +19,14 @@ public abstract partial class Item : Node2D
 		_sprite = GetNode<Sprite2D>("ItemSprite");
 		_area = GetNode<Area2D>("ItemArea");
 		_textLabel = GetNode<Label>("ActionLabel");
+		GD.Print(_textLabel);
 		
 		_textLabel.Text = _text;
+		
+		Enter();
 	}
 	
+	public abstract void Enter();
 	public abstract void Pick();
 	
 	public void PlayerEntered(Node2D body)
