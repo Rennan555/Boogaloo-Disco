@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://ct55gvl1s42im"]
 
-[ext_resource type="Script" uid="uid://c7aer1macta5o" path="res://scripts/uis/DiscoDisplays.cs" id="1_68vuu"]
+[ext_resource type="Script" uid="uid://c7aer1macta5o" path="res://scripts/uis/disco_displays/DiscoDisplays.cs" id="1_68vuu"]
 [ext_resource type="Theme" uid="uid://d20meefyj6v6a" path="res://resources/themes/label_theme.tres" id="1_ois8n"]
 
 [node name="DiscoDisplays" type="Control" unique_id=1448633622]

@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://djhq4k1wkf0vq"]
 
 [ext_resource type="Texture2D" uid="uid://bwycmorioikjg" path="res://assets/ui/menu_bg.png" id="1_1ace6"]
+[ext_resource type="Script" uid="uid://bhfaq5dmbjy4g" path="res://scripts/uis/menus/menu/Menu.cs" id="1_y8gly"]
 [ext_resource type="Theme" uid="uid://d20meefyj6v6a" path="res://resources/themes/label_theme.tres" id="2_kivbv"]
 
 [node name="Menu" type="Control" unique_id=1400064973]
@@ -10,6 +11,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_y8gly")
 
 [node name="MenuNinePatchRect" type="NinePatchRect" parent="." unique_id=2106180453]
 layout_mode = 1
@@ -45,6 +47,5 @@ layout_mode = 2
 theme = ExtResource("2_kivbv")
 theme_override_constants/outline_size = 5
 theme_override_font_sizes/font_size = 18
-text = "Menu"
 horizontal_alignment = 1
 vertical_alignment = 1
