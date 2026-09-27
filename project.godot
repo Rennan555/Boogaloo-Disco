@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="Eletric Boogaloo"
+run/main_scene="uid://ct55gvl1s42im"
 config/features=PackedStringArray("4.7", "C#", "Forward Plus")
 config/icon="res://assets/placeholders/icon.svg"
 
