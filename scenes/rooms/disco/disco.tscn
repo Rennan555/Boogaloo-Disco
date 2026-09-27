@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://ckwdmffauso6x" path="res://scenes/entities/player/player.tscn" id="3_rkgys"]
 [ext_resource type="PackedScene" uid="uid://bst3ev280e4eg" path="res://scenes/items/trash/trash.tscn" id="4_rkgys"]
 [ext_resource type="PackedScene" uid="uid://ct55gvl1s42im" path="res://scenes/uis/disco_displays/disco_displays.tscn" id="4_wy447"]
+[ext_resource type="PackedScene" uid="uid://hqlt8ycifxss" path="res://scenes/objects/pc/pc.tscn" id="5_5lsf2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5lsf2"]
 texture = ExtResource("1_dynh0")
@@ -55,6 +56,9 @@ position = Vector2(160, 143)
 position = Vector2(134, 186)
 FilthValue = 10.0
 
+[node name="PC" parent="InstancesNode" unique_id=767128199 instance=ExtResource("5_5lsf2")]
+position = Vector2(252, 90)
+
 [node name="UiLayer" type="CanvasLayer" parent="." unique_id=609722403]
 
 [node name="DiscoDisplays" parent="UiLayer" unique_id=1448633622 instance=ExtResource("4_wy447")]
@@ -62,3 +66,11 @@ offset_left = 2.0
 offset_top = 3.0
 offset_right = 2.0
 offset_bottom = 3.0
+
+[node name="ColorRect" type="ColorRect" parent="UiLayer" unique_id=1638159417]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 1, 1, 0)

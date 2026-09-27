@@ -7,12 +7,12 @@ public partial class Pc : Object
 	
 	public override void Start()
 	{
-		_packedMenu = GD.Load<PackedScene>("res://scenes/uis/menus/menu/menu.tscn");
+		_packedMenu = GD.Load<PackedScene>("res://scenes/uis/menus/pc_menu/pc_menu.tscn");
 	}
 	
 	public override void Use()
 	{
-		Menu PcMenu = _packedMenu.Instantiate<Menu>();
-		AddChild(PcMenu);
+		PcMenu PcMenuScreen = _packedMenu.Instantiate<PcMenu>();
+		AddChild(PcMenuScreen);
 	}
 }

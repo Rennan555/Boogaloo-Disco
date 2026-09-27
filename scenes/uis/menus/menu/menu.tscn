@@ -38,7 +38,10 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 4.0
 offset_top = 4.0
+offset_right = -4.0
+offset_bottom = -4.0
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -49,3 +52,18 @@ theme_override_constants/outline_size = 5
 theme_override_font_sizes/font_size = 18
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="MenuControl" type="Control" parent="MenuNinePatchRect/MenuVBoxContainer" unique_id=1849128657]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ButtonsHBoxContainer" type="HBoxContainer" parent="MenuNinePatchRect/MenuVBoxContainer" unique_id=1992383702]
+layout_mode = 2
+size_flags_vertical = 8
+alignment = 1
+
+[node name="CloseButton" type="Button" parent="MenuNinePatchRect/MenuVBoxContainer/ButtonsHBoxContainer" unique_id=962818644]
+layout_mode = 2
+text = "Close"
+
+[connection signal="pressed" from="MenuNinePatchRect/MenuVBoxContainer/ButtonsHBoxContainer/CloseButton" to="." method="Close"]

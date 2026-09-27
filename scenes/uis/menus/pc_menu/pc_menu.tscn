@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://cr7a240oeqyy7"]
+
+[ext_resource type="PackedScene" uid="uid://djhq4k1wkf0vq" path="res://scenes/uis/menus/menu/menu.tscn" id="1_i002h"]
+[ext_resource type="Script" uid="uid://d8l1aycix607" path="res://scripts/uis/menus/pc_menu/PcMenu.cs" id="2_7qvpi"]
+
+[node name="PcMenu" unique_id=1400064973 instance=ExtResource("1_i002h")]
+script = ExtResource("2_7qvpi")
+
+[node name="PartyButton" type="Button" parent="MenuNinePatchRect/MenuVBoxContainer/ButtonsHBoxContainer" parent_id_path=PackedInt32Array(1992383702) index="0" unique_id=2038179507]
+layout_mode = 2
+text = "Start Party"
+
+[connection signal="pressed" from="MenuNinePatchRect/MenuVBoxContainer/ButtonsHBoxContainer/PartyButton" to="." method="StartParty"]

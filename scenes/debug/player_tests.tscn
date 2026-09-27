@@ -17,5 +17,6 @@ position = Vector2(399, 191)
 position = Vector2(349, 207)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=147465276]
+layer = -2
 
 [node name="DiscoDisplays" parent="CanvasLayer" unique_id=1448633622 instance=ExtResource("3_5dwpy")]

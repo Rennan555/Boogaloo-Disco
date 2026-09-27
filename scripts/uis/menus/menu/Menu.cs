@@ -13,4 +13,9 @@ public partial class Menu : Control
 		_titleLabel = GetNode<Label>("MenuNinePatchRect/MenuVBoxContainer/TitleLabel");
 		_titleLabel.Text = Title;
 	}
+	
+	public void Close()
+	{
+		QueueFree();
+	}
 }

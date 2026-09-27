@@ -29,7 +29,7 @@ public partial class Player : Character
 	
 	private void ActionPress()
 	{
-		if (Input.IsActionPressed("Action"))
+		if (Input.IsActionJustPressed("Action"))
 		{
 			EmitSignal(SignalName.ActionPressed);
 		}
