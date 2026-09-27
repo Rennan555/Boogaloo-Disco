@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://ckwdmffauso6x" path="res://scenes/entities/player/player.tscn" id="1_isbbw"]
 [ext_resource type="PackedScene" uid="uid://ct55gvl1s42im" path="res://scenes/uis/disco_displays.tscn" id="3_5dwpy"]
 [ext_resource type="PackedScene" uid="uid://bst3ev280e4eg" path="res://scenes/items/trash/trash.tscn" id="3_7sjer"]
+[ext_resource type="PackedScene" uid="uid://hqlt8ycifxss" path="res://scenes/objects/pc/pc.tscn" id="4_5dwpy"]
 
 [node name="PlayerTests" type="Node2D" unique_id=1425756403]
 
@@ -11,6 +12,9 @@ position = Vector2(320, 178)
 
 [node name="TrashNode" parent="." unique_id=1572421385 instance=ExtResource("3_7sjer")]
 position = Vector2(399, 191)
+
+[node name="PC" parent="." unique_id=767128199 instance=ExtResource("4_5dwpy")]
+position = Vector2(349, 207)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=147465276]
 

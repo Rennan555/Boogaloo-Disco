@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://hqlt8ycifxss"]
+
+[ext_resource type="PackedScene" uid="uid://c083gm3tmejn5" path="res://scenes/objects/object/object.tscn" id="1_1ng6w"]
+[ext_resource type="Script" uid="uid://vp1hteqmsawg" path="res://scripts/objects/pc/Pc.cs" id="2_0ug27"]
+[ext_resource type="Texture2D" uid="uid://dbrehrboirskm" path="res://assets/placeholders/icon.svg" id="2_8ahk3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8ahk3"]
+size = Vector2(38, 13)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ib8k4"]
+radius = 5.3600025
+height = 43.077843
+
+[node name="PC" unique_id=767128199 instance=ExtResource("1_1ng6w")]
+script = ExtResource("2_0ug27")
+
+[node name="ObjectSprite" parent="." index="0" unique_id=1037830005]
+scale = Vector2(0.3, 0.16)
+texture = ExtResource("2_8ahk3")
+
+[node name="ObjectCollision" parent="." index="1" unique_id=504577901]
+position = Vector2(0, 3.5)
+shape = SubResource("RectangleShape2D_8ahk3")
+
+[node name="ObjectShape" parent="ObjectArea" parent_id_path=PackedInt32Array(924396096) index="0" unique_id=253959429]
+position = Vector2(0, -8)
+rotation = 1.5707964
+scale = Vector2(0.9328354, -0.557131)
+shape = SubResource("CapsuleShape2D_ib8k4")
+
+[node name="TextLabel" parent="." index="3" unique_id=1957041112]
+visible = false
+
+[connection signal="body_entered" from="ObjectArea" to="." method="PlayerEntered"]
+[connection signal="body_exited" from="ObjectArea" to="." method="PlayerExited"]

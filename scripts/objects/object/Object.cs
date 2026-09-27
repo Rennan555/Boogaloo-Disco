@@ -5,6 +5,7 @@ public abstract partial class Object : StaticBody2D
 {
 	private Area2D _area;
 	private Label _textLabel;
+	private Player _player;
 	
 	public override void _Ready()
 	{
