@@ -121,3 +121,6 @@ position = Vector2(0, 4)
 shape = SubResource("RectangleShape2D_tlaso")
 
 [node name="Camera2D" type="Camera2D" parent="." index="2" unique_id=1956050053]
+
+[node name="GrabbedItemNode" type="Node2D" parent="." index="3" unique_id=60946016]
+position = Vector2(0, -7)

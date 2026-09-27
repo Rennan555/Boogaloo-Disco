@@ -12,6 +12,7 @@ public abstract partial class Item : Node2D
 	protected Sprite2D _sprite;
 	protected Area2D _area;
 	protected Label _textLabel;
+	protected Player _player;
 	
 	public override void _Ready()
 	{
@@ -30,6 +31,7 @@ public abstract partial class Item : Node2D
 		{
 			_textLabel.Visible = true;
 			player.ActionPressed += Pick;
+			_player = player;
 		}
 	}
 	
@@ -39,6 +41,7 @@ public abstract partial class Item : Node2D
 		{
 			_textLabel.Visible = false;
 			player.ActionPressed -= Pick;
+			_player = null;
 		}
 	}
 }

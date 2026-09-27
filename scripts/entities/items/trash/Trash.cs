@@ -11,6 +11,7 @@ public partial class Trash : Item
 	{
 		EmitSignal(SignalName.PickedUp);
 		
+		_player.AddGrabbedItem((Item)Duplicate());
 		QueueFree();
 	}
 }
