@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://c083gm3tmejn5"]
+
+[ext_resource type="Theme" uid="uid://d20meefyj6v6a" path="res://resources/themes/label_theme.tres" id="1_ib8k4"]
+
+[node name="Object" type="StaticBody2D" unique_id=767128199]
+
+[node name="ObjectCollision" type="CollisionShape2D" parent="." unique_id=504577901]
+
+[node name="ObjectSprite" type="Sprite2D" parent="." unique_id=1037830005]
+
+[node name="ObjectArea" type="Area2D" parent="." unique_id=924396096]
+
+[node name="ObjectShape" type="CollisionShape2D" parent="ObjectArea" unique_id=253959429]
+
+[node name="TextLabel" type="Label" parent="." unique_id=1957041112]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -7.0
+offset_top = -23.0
+offset_right = 7.0
+grow_horizontal = 2
+grow_vertical = 0
+theme = ExtResource("1_ib8k4")
+text = "Usar"
