@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://ct55gvl1s42im"]
+
+[ext_resource type="Script" uid="uid://c7aer1macta5o" path="res://scripts/uis/DiscoDisplays.cs" id="1_68vuu"]
+[ext_resource type="Theme" uid="uid://d20meefyj6v6a" path="res://resources/themes/label_theme.tres" id="1_ois8n"]
+
+[node name="DiscoDisplays" type="Control" unique_id=1448633622]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_68vuu")
+
+[node name="LabelsBoxContainer" type="VBoxContainer" parent="." unique_id=1215417591]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+
+[node name="MoneyLabel" type="Label" parent="LabelsBoxContainer" unique_id=1481860423]
+layout_mode = 2
+theme = ExtResource("1_ois8n")
+
+[node name="ReputationLabel" type="Label" parent="LabelsBoxContainer" unique_id=1778123275]
+layout_mode = 2
+theme = ExtResource("1_ois8n")
+
+[node name="FilthLabel" type="Label" parent="LabelsBoxContainer" unique_id=1910766054]
+layout_mode = 2
+theme = ExtResource("1_ois8n")

@@ -17,6 +17,7 @@ config/icon="res://assets/placeholders/icon.svg"
 [autoload]
 
 KeyboardInput="*uid://c8n636sd3wfoi"
+DiscoManagement="*uid://d3b82jtub3sdx"
 
 [display]
 
