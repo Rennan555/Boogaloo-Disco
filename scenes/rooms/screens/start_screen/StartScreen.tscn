@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://cuqpb8mjkhtqf"]
+
+[ext_resource type="Script" uid="uid://c78s1wjmy437x" path="res://scripts/rooms/screens/start_screen/StartScreen.cs" id="1_0txqw"]
+[ext_resource type="AudioStream" path="res://assets/audios/AXIS1253_72_Higher High_Short.mp3" id="2_cejkh"]
+
+[node name="StartScreen" type="Control" unique_id=1843748900]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0txqw")
+BackgroundAudio = ExtResource("2_cejkh")

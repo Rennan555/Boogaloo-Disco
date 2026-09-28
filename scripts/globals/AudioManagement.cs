@@ -9,6 +9,12 @@ public partial class AudioManagement : AudioStreamPlayer2D
 		Play();
 	}
 	
+	public void PlayString(String audio)
+	{
+		Stream = GD.Load<AudioStream>(audio);
+		Play();
+	}
+	
 	public void StopStream()
 	{
 		Stop();
