@@ -15,6 +15,7 @@ public partial class DiscoManagement : Node
 	public void StartParty()
 	{
 		IsParty = true;
+		Money += 55.5f;
 		EmitSignal(SignalName.PartyStarted);
 	}
 }
