@@ -6,6 +6,8 @@ public partial class StartScreen : Control
 	[Export]
 	public AudioStream BackgroundAudio;
 	
+	private const String StartScenePath = "res://scenes/rooms/disco/disco.tscn";
+	
 	private AudioManagement _audioManager;
 	
 	public override void _Ready()
@@ -14,7 +16,8 @@ public partial class StartScreen : Control
 		_audioManager.PlayStream(BackgroundAudio);
 	}
 	
-	public override void _Process(double delta)
+	public void StartGame()
 	{
+		GetTree().ChangeSceneToFile(StartScenePath);
 	}
 }
