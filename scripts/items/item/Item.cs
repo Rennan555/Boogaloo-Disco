@@ -32,6 +32,12 @@ public abstract partial class Item : Node2D
 	{
 		if (body is Player player)
 		{
+			// If the Player has an item already, dont show message
+			if (player.HasItem())
+			{
+				return;
+			}
+
 			_textLabel.Visible = true;
 			player.ActionPressed += Pick;
 			_player = player;

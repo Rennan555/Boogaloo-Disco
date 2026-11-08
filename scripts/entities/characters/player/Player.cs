@@ -42,4 +42,9 @@ public partial class Player : Character
 		
 		_grabbedItem.AddChild(item);
 	}
+
+	public bool HasItem()
+	{
+		return _grabbedItem.GetChildCount() != 0;
+	}
 }

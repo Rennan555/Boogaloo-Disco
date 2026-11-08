@@ -6,14 +6,14 @@ public partial class Trash : Item
 	[Export]
 	public float FilthValue;
 	
-	private DiscoManagement _manager;
+	private DiscoManagement _dissco_manager;
 	
 	public override void Enter()
 	{
-		_manager = GetNode<DiscoManagement>("/root/DiscoManagement");
+		_dissco_manager = GetNode<DiscoManagement>("/root/DiscoManagement");
 		
-		_manager.Filth += FilthValue;
-		_manager.TrashCount ++;
+		_dissco_manager.Filth += FilthValue;
+		_dissco_manager.TrashCount ++;
 	}
 	
 	public override void Pick()
@@ -21,6 +21,7 @@ public partial class Trash : Item
 		EmitSignal(SignalName.PickedUp);
 		
 		_player.AddGrabbedItem((Item)Duplicate());
+		_dissco_manager.Filth -= FilthValue;
 		QueueFree();
 	}
 }
